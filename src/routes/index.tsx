@@ -1,38 +1,13 @@
+import type { BookData } from '#/types/BookIt';
 import { createFileRoute } from '@tanstack/react-router'
 import { useState, useEffect } from 'react';
 
 export const Route = createFileRoute('/')({ component: Home })
 
 
-
-interface BookData {
-  id: string
-  title: string
-  author: string
-  desireRating: number
-  hasObtain: boolean
-}
-interface BookListProps {
-  bookList: BookData[]
-}
+import { DesiredBookListing } from "#/Features/desiredBookListing/DesiredBookListing.tsx"
 
 
-
-function BookList({ bookList }: BookListProps) {
-  return (
-    <ul>
-      {
-        bookList.map((x: BookData) => <li key={x.id}>{x.title} , {x.author}, {x.desireRating}, {x.hasObtain ? "have" : "have not"}</li>)
-      }
-    </ul>)
-}
-
-
-function AddABook() {
-  return (
-    <p>No Books Have been added</p>
-  )
-}
 
 const colorProfile = ['indigo', 'pink', 'purple', 'gray', 'red', 'lime', 'fuchsia', 'violet', 'gray'] as const
 type ContainerColor = typeof colorProfile[number];
@@ -151,7 +126,7 @@ function Home() {
           <InfoTab savedBooks={savedBooks} />
         </div>
         <div className="p-10">
-          {savedBooks.length !== 0 ? (<BookList bookList={savedBooks} />) : (<AddABook />)}
+          <DesiredBookListing desiredBooks={savedBooks} />
         </div>
       </Container>
 
