@@ -5,6 +5,7 @@ export const Route = createFileRoute('/')({ component: Home })
 
 
 interface BookDataProps {
+  id: string
   title: string
   author: string
   desireRating: number
@@ -20,7 +21,7 @@ function BookList({ bookList }: BookListProps) {
   return (
     <ul>
       {
-        bookList.map((x: BookDataProps) => <li>{x.title} , {x.author}, {x.desireRating}, {x.hasObtain ? "have" : "have not"}</li>)
+        bookList.map((x: BookDataProps) => <li key={x.id}>{x.title} , {x.author}, {x.desireRating}, {x.hasObtain ? "have" : "have not"}</li>)
       }
     </ul>)
 }
@@ -32,14 +33,51 @@ function AddABook() {
   )
 }
 
+const colorProfile = ['indigo', 'pink', 'purple', 'gray', 'red', 'lime', 'fuchsia', 'violet', 'gray'] as const
+type ContainerColor = typeof colorProfile[number];
+
+
 interface ContainerProps {
+  aColor?: ContainerColor
+  cssClass?: string
   children: React.ReactNode
 }
 
-function Container({ children }: ContainerProps) {
+function generateColor() {
+  return new Map(colorProfile.map((x) =>
+    [x, `bg-${x}-100 border-${x}-500 text-${x}-900`]))
+}
+
+
+function Container({ aColor = 'gray', cssClass, children }: ContainerProps) {
+  const colorContainer = generateColor()
+  const styleSomething = `border-4 rounded-md text-center ${colorContainer.get(aColor)} ${cssClass ?? ""}`
+
   return (
-    <div className=' p-20 border-4 border-fuchsia-500 rounded-xl bg-fuchsia-100 text-fuchsia-900 text-center'>
+    <div className={styleSomething}>
       {children}
+    </div>
+  )
+}
+
+interface InfoTabProps {
+  savedBooks: BookDataProps[]
+}
+
+function InfoTab({ savedBooks }: InfoTabProps) {
+
+
+  const totalCount = savedBooks.length
+  const bookGot = savedBooks.filter(x => x.hasObtain).length
+  const bookDont = savedBooks.filter(x => !x.hasObtain).length
+
+
+
+  return (
+    <div className="p-5 flex justify-evenly">
+      <p>Total Book Count : {totalCount}</p>
+      <p>Total Book Captured : {bookGot}</p>
+      <p>Total Book Free: {bookDont}</p>
     </div>
   )
 }
@@ -48,20 +86,41 @@ function Container({ children }: ContainerProps) {
 
 function Home() {
 
-  const savedBooks = [{ title: "The Great Gatsby", author: "F. Scott Fitzgerald", desireRating: 0, hasObtain: false }]
+
+  const savedBooks = [
+    { title: "Lonesome Dove", author: "Larry McMurtry", desireRating: 5, hasObtain: false, id: "qewr" },
+    { title: "The Call of the Wild", author: "Jack London", desireRating: 4, hasObtain: true, id: "asdf" },
+    { title: "The Great Gatsby", author: "F. Scott Fitzgerald", desireRating: 0, hasObtain: false, id: "okn" }]
 
   return (
-    <div className="bg-zinc-700 h-full p-8 flex flex-col gap-10">
-      <div className='border-4 border-purple-500 rounded-xl p-20 bg-purple-200 text-purple-900 text-center'>
+    <div className="bg-black-100 h-full p-8 flex flex-col gap-2">
 
+      <Container aColor='indigo' cssClass="p-20">
         <h1 className="text-4xl font-bold">BOOK HUNT</h1>
         <p className="mt-4 text-lg">
           A list of books to be tracked down and bought in a second hand bookshop
         </p>
-      </div>
-      <Container>
-        {savedBooks.length !== 0 ? (<BookList bookList={savedBooks} />) : (<AddABook />)}
+
       </Container>
-    </div>
+
+
+      <Container aColor='purple'>
+        some action for it
+      </Container>
+
+
+
+
+      <Container aColor='fuchsia'>
+        <div>
+
+          <InfoTab savedBooks={savedBooks} />
+        </div>
+        <div className="p-20">
+          {savedBooks.length !== 0 ? (<BookList bookList={savedBooks} />) : (<AddABook />)}
+        </div>
+      </Container>
+
+    </div >
   )
 }
