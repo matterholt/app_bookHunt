@@ -92,7 +92,7 @@ interface ButtonProps {
 function Button({ handleClick, children }: ButtonProps) {
   return (
     <button
-      onClick={() => handleClick()}
+      onClick={handleClick}
       className="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition w-30 m-2 rounded">{children}</button>
 
   )
@@ -112,13 +112,13 @@ function Home() {
 
 
 
-  function updateSavedBooks() {
-    const temp = { title: "Lonesome Dove", author: "Larry McMurtry", desireRating: 5, hasObtain: false, id: "asdfg3erg" }
-    if (savedBooks.some(book => book.title === temp.title)) {
+  function updateSavedBooks(newBook: BookData) {
+    if (savedBooks.some(book => book.title === newBook.title)) {
       setStatus("isStoredBook")
+      return
     }
 
-    setSavedBooks([...savedBooks, temp])
+    setSavedBooks([...savedBooks, newBook])
   }
 
 
@@ -134,8 +134,9 @@ function Home() {
       </Container>
 
 
+      {/* 49.  , , */}
       <Container aColor='purple'>
-        <Button handleClick={updateSavedBooks}>Add</Button>
+        <Button handleClick={() => updateSavedBooks({ title: "The Road", author: "Cormac McCarthy", desireRating: 2, hasObtain: false, id: "asdfg3erg" })}>Add</Button>
 
 
         {status === "isStoredBook" ? <p className="text-red-700">Book has already in List</p> : null}
