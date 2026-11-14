@@ -9,11 +9,14 @@ function BookListing({ bookItem }: BookListingProps) {
   const BookObtained = ({ obtained }: { obtained: boolean }) => (<p>{obtained ? "yes" : "no"}</p>)
   const BookHeading = ({ headerTitle }: { headerTitle: string }) => <p className="font-bold">{headerTitle}</p>
   const BookItem = ({ bookDetails }: { bookDetails: string }) => <p>{bookDetails}</p>
+
   const isItem = bookItem !== undefined
 
+  const headingStyle = isItem ? null : "border-b"
+
   return (
-    <li key={bookItem?.id}
-      className="grid grid-cols-4 text-left"
+    <li
+      className={`grid grid-cols-4 text-left ${headingStyle}`}
     >
       {isItem ? <BookItem bookDetails={bookItem?.title} /> : <BookHeading headerTitle="Title" />}
       {isItem ? <BookItem bookDetails={bookItem?.author} /> : <BookHeading headerTitle="Author" />}
@@ -30,8 +33,6 @@ interface DesiredBookListingProps {
 }
 
 
-
-// {savedBooks.length !== 0 ? (<BookList bookList={savedBooks} />) : (<AddABook />)}
 export function DesiredBookListing({ desiredBooks }: DesiredBookListingProps) {
 
   if (desiredBooks.length === 0) {
@@ -42,7 +43,7 @@ export function DesiredBookListing({ desiredBooks }: DesiredBookListingProps) {
     <ul>
       <BookListing />
       {
-        desiredBooks.map((x: BookData) => <BookListing bookItem={x} />)
+        desiredBooks.map((x: BookData) => <BookListing key={x.id} bookItem={x} />)
       }
     </ul>)
 }
