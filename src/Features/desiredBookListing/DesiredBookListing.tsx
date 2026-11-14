@@ -15,7 +15,22 @@ interface BookListingProps {
 
 function BookListing({ bookItem }: BookListingProps) {
   return (
-    <li key={bookItem.id}>{bookItem.title} , {bookItem.author}, {bookItem.desireRating}, {bookItem.hasObtain ? "have" : "have not"}</li>
+    <li key={bookItem.id}
+      className="grid grid-cols-4 text-left"
+    >
+      <p></p>
+      <p>
+        {bookItem.title}
+      </p>
+      <p>
+        {bookItem.author}
+      </p>
+      <p>
+        {bookItem.desireRating}
+      </p>
+      <p>
+        {bookItem.hasObtain ? "have" : "have not"}
+      </p></li>
   )
 }
 

@@ -2,15 +2,34 @@
 
 interface ButtonProps {
   children: React.ReactNode
-  handleClick: () => void; // not sure
-
+  cssClass?: string
+  handleClick?: () => void; // not sure
+  buttonType?: 'base' | 'dialog'
+  type?: "submit" | "button"
 }
 
-export function Button({ handleClick, children }: ButtonProps) {
+
+
+export function Button({ buttonType = 'base', type = "button", cssClass, handleClick, children }: ButtonProps) {
+  const baseCss = "bg-blue-600 text-white rounded-md hover:bg-blue-700 transition rounded"
+
+  const figureButtonType = () => {
+    if (buttonType === 'base') {
+      return "px-4 py-2 w-30 m-2"
+    }
+
+    if (buttonType === 'dialog') {
+      return "w-[25px] h-[25px] self-end"
+
+    }
+  }
+
+
   return (
     <button
+      type={type}
       onClick={handleClick}
-      className="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition w-30 m-2 rounded">{children}</button>
+      className={[baseCss, figureButtonType(), cssClass].join(" ")}>{children}</button>
   )
 }
 

@@ -39,10 +39,13 @@ export function Dialog({ buttonLabel = "open", children }: DialogProps) {
       backdrop:bg-black/50
       backdrop:backdrop-blur-sm" ref={dialogRef}>
         <Container aColor="teal" >
-          {children}
-          <Button handleClick={closeDialog}>
-            Close
-          </Button>
+          <div className="flex flex-col">
+            <Button buttonType="dialog" handleClick={closeDialog}>
+              X
+            </Button>
+            {children}
+
+          </div>
         </Container>
       </dialog>
     </ >

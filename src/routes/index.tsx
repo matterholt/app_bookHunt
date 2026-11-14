@@ -9,6 +9,7 @@ import { useRef, useState, useEffect } from 'react';
 import { DesiredBookListing } from "#/Features/desiredBookListing/DesiredBookListing"
 import { Dialog } from "#/components/lib/Dialog"
 import { Container } from '#/components/lib/Conatiner';
+import { AddABookForm } from '#/Features/addABookForm/AddABookForm';
 
 
 
@@ -69,7 +70,7 @@ function Home() {
 
       <Container aColor='purple'>
         < Dialog buttonLabel="Add Boook">
-          <p>Form to add a new book</p>
+          <AddABookForm />
         </Dialog>
         {status === "isStoredBook" ? <p className="text-red-700">Book has already in List</p> : null}
       </Container>
