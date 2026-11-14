@@ -1,0 +1,104 @@
+id,title,author,desireRating,hasObtain
+be9cac8d-c280-420e-9145-31d21f9b051a,The Great Gatsby,F. Scott Fitzgerald,0,true
+e75e0ab2-baeb-4801-91e6-f0e75c17c3ef,The Prince,Niccolo Machiavelli,0,true
+91bd24ab-2895-4a83-8ef6-8ebc6af9fb29,Band of Brothers,Stephen Ambrose,0,false
+88b0edea-43b7-4e6e-95eb-b4904c5c2413,The Republic,Plato,0,true
+95cd32f2-3db7-4848-ab19-94c4a8ad0e28,The Wealth of Nations,Adam Smith,0,true
+9c867c72-ccc3-4426-9dd1-3bf4b49d9781,The Call of the Wild,Jack London,0,true
+3cf8e959-d19c-4bb1-af26-6b686cf9b40e,Theodore Roosevelt Trilogy,Edmund Morris,0,true
+a1071277-01d1-4cf3-83a0-6e90763fe4d1,1984,George Orwell,0,true
+b5ae38d1-4405-4b60-85ce-824e79da0644,Brave New World,Aldous Huxley,0,true
+6d3d6fdf-b6f3-410b-8f76-975ebc366367,How to Win Friends and Influence People,Dale Carnegie,0,false
+33131878-b930-4338-ae97-162b4a507c6c,Roman Honor,Carlin Barton,0,true
+4c8fb4c7-f358-4e77-a0fe-e2e2e918d5c6,Catch-22,Joseph Heller,0,true
+74bc8427-7e0f-4fb9-80be-07452c7a7a93,Slaughterhouse-Five,Kurt Vonnegut,0,true
+fcce5eed-9132-4970-8f14-c9c6e85d75d9,The Brothers Karamazov,Fyodor Dostoevsky,0,true
+b3df7230-9304-47e6-b56a-95be4f6c0bb4,The Sun Also Rises,Ernest Hemingway,0,true
+4fc14655-c69a-4310-b35c-441f471e9fdc,For Whom the Bell Tolls,Ernest Hemingway,0,true
+b0703581-8993-4828-b80e-699b6669af46,Swiss Family Robinson,Johann David Wyss,0,true
+c6101d9c-7028-47b8-abcb-2c086373fa91,On the Road,Jack Kerouac,0,true
+1ceb74e3-7fed-434d-800d-d5dd43763a66,The Dharma Bums,Jack Kerouac,0,false
+701e88fd-5211-4fb4-998e-acf2468a21a9,The Iliad & The Odyssey,Homer,0,false
+d2736668-7397-4e36-861e-852f71bbffa4,Walden,Henry David Thoreau,0,false
+eb69fa33-cc71-4d83-ba2d-b709de44f2d2,The Lord of the Flies,William Golding,0,false
+bf4d45c3-25b6-43bf-91e4-6a1057a8419e,Atlas Shrugged,Ayn Rand,0,false
+3ea9a4ee-29a8-485f-9520-2163fa4176d8,The Boy Scout Handbook (1st Edition),,0,false
+b5c11533-a92e-4aff-8746-970a6e066964,Into Thin Air,Jon Krakauer,0,false
+b63fb8de-f153-4ecb-88de-af1a10e7c3d8,King Solomon’s Mines,H. Rider Haggard,0,false
+ec595b77-bd5e-4eff-9b70-1c98a1b7b37d,A River Runs Through It,Norman Maclean,0,false
+3f1c9cab-fbf8-4a6a-b700-8a47a43b9cfc,The Autobiography of Malcolm X,,0,false
+0c501aeb-3ae1-481b-a0be-24dc68b3b53e,The Count of Monte Cristo,Alexander Dumas,0,true
+52f2c9e7-9f84-4bda-8bde-8f280e67fecf,All Quiet on the Western Front,Erich Maria Remarque,0,false
+f9a0dc89-3b0d-45ac-8b91-4a8fa9ab91a0,Pride & Prejudice,Jane Austen,0,false
+d2bf48c9-307d-4b19-9c52-f1205313bb23,The Art of War,Sun Tzu,0,true
+3965b8e2-8134-4e61-bc26-5c157c025a96,Lives,Plutarch,0,false
+38b0adc4-c5b9-4ea9-9da9-47c9390e4e38,The Bible,true,0,false
+f5448d41-f0c0-4559-a457-c620b4785ae6,Lonesome Dove,Larry McMurtry,0,true
+a244fc11-5fc5-4cc8-9f59-0dfbfb2ca295,After Virtue,Alasdair MacIntyre,0,false
+adc39f7a-54d5-452e-9c83-39c995d78e0e,The Maltese Falcon,Dashiell Hammett,0,false
+2f04776b-2639-4a4c-8719-2af8cc6ddf96,To Kill A Mockingbird,Harper Lee,0,false
+25eca244-418d-4285-a3ee-fb2e964d9b08,The Killer Angels,Michael Shaara,0,false
+4a82d69a-9519-4eef-80ce-b6871dbfbd23,The Autobiography of Benjamin Franklin,,0,false
+7a7d7688-4d41-4cc5-8744-5ab0be8ada28,The Histories,Herodotus,0,false
+077e7b13-b6b7-4b45-8fe0-43da51874d59,From Here to Eternity,James Jones,0,false
+b2cb145a-2dc8-42fc-a8b1-f2010a9f7e5c,The Thin Red Line,James Jones,0,false
+c4f38ec1-8db0-4073-bce4-c12a47570d5c,Zen and the Art of Motorcycle Maintenance,Robert Pirsig,0,false
+ee47ff62-58d4-4979-9c5c-36ad20a78dbd,The Long Goodbye,Raymond Chandler,0,false
+a7a1b184-cfce-430d-bad9-09c605796c3d,Self-Reliance & Other Essays,Ralph Waldo Emerson,0,false
+6497ffdd-348b-48e8-8e72-b6a7cd2eb435,Ulysses,James Joyce,0,false
+15ece9e9-bbdb-4e00-9766-984ef0f6986f,The Master and Margarita,Mikhail Bulgakov,0,false
+c70d0cf1-bda5-4e21-a738-777c6690135d,The Road,Cormac McCarthy,0,false
+349ceaaf-7c3e-4a62-96eb-915b41e25ece,Steppenwolf,Herman Hesse,0,false
+dfc5ed21-ed2a-4d3d-97dd-3748ee86896c,The Book of Deeds of Arms and Chivalry,Christine de Pizan,0,false
+fb00a3d9-5589-4fe6-b2f3-087614782e93,Don Quixote,Miguel de Cervantes,0,false
+167973c2-e166-4b25-bf0e-94009492a70a,Invisible Man,Ralph Ellison,0,false
+f6ced43b-9ad9-4a79-831e-f98a4acbc0db,The Adventures of Huckleberry Finn,Mark Twain,0,false
+c00c8347-7a28-41be-9d7f-410282264ebd,Leviathan,Thomas Hobbes,0,false
+e51fba2f-cde7-44f2-8321-26231877bada,Nicomachean Ethics,Aristotle,0,false
+53c3a139-36bd-4eff-b110-507c8c85e01a,Cyrano de Bergerac,Edmond Rostand,0,false
+e8bb13f0-8376-41ff-a57a-f7c167007e96,The Last Lion Trilogy,William Manchester,0,false
+e594f0e3-be37-47b5-9008-a40ddea939fe,The Naked and the Dead,Norman Mailer,0,false
+14d07239-0b19-4567-b442-8941a9154860,This Boy’s Life,Tobias Wolff,0,false
+2f1b14f8-42da-4753-a75c-f606e24002eb,Hatchet,Gary Paulsen,0,false
+dde4f952-63f4-4523-9479-432ed7018217,Resilience,Eric Greitens,0,false
+f254c6d9-76e0-4e92-a837-4c0a71b96f92,Tarzan of the Apes,Edgar Rice Burroughs,0,false
+c4eab9de-d6a6-421c-bec1-7a0dcb2646fc,Thus Spoke Zarathustra,Friedrich Nietzsche,0,false
+ff1857ee-4e4a-4d16-ac28-dd67c2301f11,The Federalist Papers,,0,false
+68172bc1-10ba-4b2f-8805-6aedd6a7ce9b,The Godfather,Mario Puzo,0,false
+379eaa70-ee63-4097-b8f1-1feaefee51e3,Moby Dick,Herman Melville,0,false
+d5dcea54-a6b3-4e31-ade7-9943bb1e425a,Frankenstein,Mary Shelley,0,false
+04695d34-f0ac-4b57-8dcb-65a6bcc5f625,Hamlet,William Shakespeare,0,false
+7d1ca85e-a655-4605-9f04-f8dceceae6e9,A Tale of Two Cities,Charles Dickens,0,false
+4cee7be5-5699-445a-b8fa-4b7215ed49c5,Revolutionary Road,Richard Yates,0,false
+f460bc7e-91be-4448-9a15-2fac9026ee93,The Divine Comedy,Dante Alighieri,0,false
+e32e5518-1260-4968-a3af-f1ac327c1882,The Boys of Summer,Roger Kahn,0,false
+990bb1c4-4585-4684-8067-8d8ab7c6f1d5,A Separate Peace,John Knowles,0,false
+4fa9f7a7-7f14-4a08-b3fc-27314bcbc905,The Stranger,Albert Camus,0,false
+6d9e73cd-7700-482f-8914-107c282c90df,Robinson Crusoe,Daniel Defoe,0,false
+3229bd93-f924-47a0-9d01-41ac7cb0056d,The 7 Habits of Highly Successful People,Stephen Covey,0,false
+dab4d9a7-9d5a-4c36-bbbb-baa589bbcbce,Cannery Row,John Steinbeck,0,false
+86c69c39-b43e-452d-bfde-c46733fbe8a0,Treasure Island,Robert Louis Stevenson,0,false
+3d6b7bfa-cbab-41cf-a404-92bf8852017f,A Confederacy of Dunces,John Kennedy Toole,0,false
+4cbb7371-c234-4935-80d3-8c8708ca7fa8,Native Son,Richard Wright,0,false
+c8453a88-57a2-4a02-99fa-5cca4a61e73b,The Great Railway Bazaar,Paul Theroux,0,false
+a87d016e-cb4a-4c76-8973-bf735303f8de,The Last of the Mohicans,James Fenimore Cooper,0,false
+34efbd38-08f8-439e-9d17-29fe89f0fbb0,The Grapes of Wrath,John Steinbeck,0,false
+c019a8d8-cb72-4671-bc9a-679127cec438,Education of a Wandering Man,Louis L’Amour,0,false
+21113cfc-3a48-4298-b537-7a92f3a8a9fb,Les Miserables,Victor Hugo,0,false
+bd59951f-e0a7-4d54-bee4-f7dbec9171f5,Man’s Search for Meaning,Viktor Frankl,0,false
+f791f14e-2254-4b36-ad82-dae9d4776938,The Outsiders,S. E. Hinton,0,false
+d7fec82d-2f5e-40a9-beb2-5f67b670f234,One Hundred Years of Solitude,Gabriel Garcia Marquez,0,false
+0f625ab0-2804-4d4c-98e1-13b79016d967,Gates of Fire,Stephen Pressfield,0,false
+811f1391-7a5b-4299-aa17-6259fd909538,Paradise Lost,John Milton,0,false
+5071b6ee-66cc-4049-b54b-6e4029855eb4,Fahrenheit 451,Ray Bradbury,0,false
+5a6e019d-5599-4740-a604-a0ac59441b2a,Oil!,Upton Sinclair,0,false
+063088a5-c3f1-4b29-bb80-715c3b5386b0,Fear and Trembling,Soren Kierkegaard,0,false
+02c27225-c2e5-4128-bdaf-04447cbca750,The Code of Man,Waller Newell,0,false
+e5ed4540-b49b-4da9-961d-1c68f2636d35,Heart of Darkness,Joseph Conrad,0,false
+8e5133a1-0331-42c5-adb9-18130aa7464f,Meditations,Marcus Aurelius,0,false
+d40a8c4e-5906-4ade-98e1-62378b8d5986,The Hobbit & The Lord of the Rings,J.R.R. Tolkien,0,false
+836eb16b-17fc-4e32-a156-84efc0c1d971,With the Old Breed,Eugene Sledge,0,false
+96e838fa-22b7-49ed-bfe9-a4cd33970b2e,Self-Control: Its Kingship and Majesty,William George Jordan,0,false
+fa222532-c8d0-4eed-850b-2743cef1df1f,The Abventures of Tom Sawyer,Mark Twain,0,true
+ee4bc6f2-88b1-468d-9153-9007efe5e3fc,The Idiot,Dostoevsky,0,true
+ef90c2c9-4fb9-483a-bc9d-f8eeb83057e6,The Collectied Jack London,Jack London,0,true
