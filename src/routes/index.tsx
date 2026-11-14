@@ -1,40 +1,16 @@
 import type { BookData } from '#/types/BookIt';
-import { createFileRoute } from '@tanstack/react-router'
-import { useState, useEffect } from 'react';
-
 export const Route = createFileRoute('/')({ component: Home })
 
-
-import { DesiredBookListing } from "#/Features/desiredBookListing/DesiredBookListing.tsx"
-
-
-
-const colorProfile = ['indigo', 'pink', 'purple', 'gray', 'red', 'lime', 'fuchsia', 'violet', 'gray'] as const
-type ContainerColor = typeof colorProfile[number];
+import { createFileRoute } from '@tanstack/react-router'
+import { useRef, useState, useEffect } from 'react';
 
 
-interface ContainerProps {
-  aColor?: ContainerColor
-  cssClass?: string
-  children: React.ReactNode
-}
 
-function generateColor() {
-  return new Map(colorProfile.map((x) =>
-    [x, `bg-${x}-100 border-${x}-500 text-${x}-900`]))
-}
+import { DesiredBookListing } from "#/Features/desiredBookListing/DesiredBookListing"
+import { Dialog } from "#/components/lib/Dialog"
+import { Container } from '#/components/lib/Conatiner';
 
 
-function Container({ aColor = 'gray', cssClass, children }: ContainerProps) {
-  const colorContainer = generateColor()
-  const styleSomething = `border-4 rounded-md text-center ${colorContainer.get(aColor)} ${cssClass ?? ""}`
-
-  return (
-    <div className={styleSomething}>
-      {children}
-    </div>
-  )
-}
 
 interface InfoTabProps {
   savedBooks: BookData[]
@@ -56,25 +32,6 @@ function InfoTab({ savedBooks }: InfoTabProps) {
 }
 
 
-
-
-interface ButtonProps {
-  children: React.ReactNode
-  handleClick: React.Dispatch<React.SetStateAction<BookData>>;
-
-}
-
-function Button({ handleClick, children }: ButtonProps) {
-  return (
-    <button
-      onClick={handleClick}
-      className="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition w-30 m-2 rounded">{children}</button>
-
-  )
-}
-
-
-
 function Home() {
 
   const [savedBooks, setSavedBooks] = useState<BookData[]>([
@@ -88,6 +45,8 @@ function Home() {
 
 
   function updateSavedBooks(newBook: BookData) {
+    const addBook = { title: "The Road", author: "Cormac McCarthy", desireRating: 2, hasObtain: false, id: "asdfg3erg" }
+
     if (savedBooks.some(book => book.title === newBook.title)) {
       setStatus("isStoredBook")
       return
@@ -98,27 +57,22 @@ function Home() {
 
 
   return (
-    <div className="bg-black-100 h-full p-8 flex flex-col gap-2">
+    <div className="bg-gray-800 h-full p-8 flex flex-col gap-2">
 
       <Container aColor='indigo' cssClass="p-10">
         <h1 className="text-4xl font-bold">BOOK HUNT</h1>
         <p className="mt-4 text-lg">
           A list of books to be tracked down and bought in a second hand bookshop
         </p>
-
       </Container>
 
 
-      {/* 49.  , , */}
       <Container aColor='purple'>
-        <Button handleClick={() => updateSavedBooks({ title: "The Road", author: "Cormac McCarthy", desireRating: 2, hasObtain: false, id: "asdfg3erg" })}>Add</Button>
-
-
+        < Dialog buttonLabel="Add Boook">
+          <p>Form to add a new book</p>
+        </Dialog>
         {status === "isStoredBook" ? <p className="text-red-700">Book has already in List</p> : null}
-
       </Container>
-
-
 
 
       <Container aColor='fuchsia'>

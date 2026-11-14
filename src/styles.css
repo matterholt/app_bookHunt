@@ -1,6 +1,6 @@
 
 @import "tailwindcss";
-@source inline("{bg,border,text}-{indigo,purple,gray,red,lime,fuchsia,violet,pink}-{100,500,900}");
+@source inline("{bg,border,text}-{indigo,purple,gray,red,lime,fuchsia,violet,pink,teal}-{100,500,900}");
 
 * {
   box-sizing: border-box;
