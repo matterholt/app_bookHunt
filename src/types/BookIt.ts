@@ -1,5 +1,5 @@
 
-interface BookData {
+export interface BookData {
   id: string
   title: string
   author: string
@@ -7,8 +7,6 @@ interface BookData {
   hasObtain: boolean
 }
 
+export type BookDataCollecton = BookData[]
 
 
-export type {
-  BookData
-}
