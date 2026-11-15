@@ -1,6 +1,8 @@
 import { Button } from "#/components/lib/Button"
 import { useState } from "react"
 
+import { addBook } from "#/serverActions/bookCollectionActions"
+
 function SelectOptions() {
   const ratingRange = Array.from({ length: 6 }, (_, i) => i)
 
@@ -29,9 +31,7 @@ function TextInput({ lables }: TextInputProps) {
 
 
   return (
-
     <label className="flex justify-between " htmlFor={lables.id}>{lables.label}
-      the value {value}
       <input className="rounded bg-white p-2" id={lables.id} name={lables.id} type="text" placeholder={lables.placeHolder} onChange={handleValueUpdate} />
     </label>
   )
@@ -43,18 +43,31 @@ function TextInput({ lables }: TextInputProps) {
 export function AddABookForm() {
 
 
-  function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault()
     const formData = new FormData(e.currentTarget);
 
+    const bookTitle = formData.get("bookTitle") as string
+    const authorName = formData.get("authorName") as string
+
     const bookData = {
-      bookTitle: formData.get("bookTitle") as string,
-      authorName: formData.get("authorName") as string,
-      desiredLevel: Number(formData.get("desiredLevel"))
+      title: bookTitle,
+      author: authorName,
+      hasObtain: false,
+      desiredRating: Number(formData.get("desiredLevel"))
     };
 
-    console.log("ADD IT TO DB", bookData)
 
+    await addBook({
+      data: bookData
+    })
+
+    if ([bookTitle, authorName].some(x => x === "")) {
+      console.log("need title and author")
+      return
+    }
+
+    console.log("added it", bookData)
 
   }
 

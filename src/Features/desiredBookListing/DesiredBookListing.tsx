@@ -20,7 +20,7 @@ function BookListing({ bookItem }: BookListingProps) {
     >
       {isItem ? <BookItem bookDetails={bookItem?.title} /> : <BookHeading headerTitle="Title" />}
       {isItem ? <BookItem bookDetails={bookItem?.author} /> : <BookHeading headerTitle="Author" />}
-      {isItem ? <BookItem bookDetails={String(bookItem?.desireRating)} /> : <BookHeading headerTitle="Desireed Rating" />}
+      {isItem ? <BookItem bookDetails={String(bookItem?.desireRating)} /> : <BookHeading headerTitle="Desired Rating" />}
       {isItem ? <BookObtained obtained={bookItem.hasObtain} /> : <BookHeading headerTitle="Obtained" />}
     </li>
   )

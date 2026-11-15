@@ -1,12 +1,32 @@
 import fs from 'fs'
+import csv from 'csv-parser'
 import { randomUUID } from 'node:crypto';
 
-import csv from 'csv-parser'
 import { createObjectCsvWriter } from "csv-writer";
 
 import type { BookData } from '#/types/BookIt';
 
 
+const SAVED_BOOK_CSV = "src/data/BookItDataBase.csv"
+
+
+
+export async function saveBookListToCSV(savedBooks) {
+
+  const csvBookStructure = createObjectCsvWriter({
+    path: SAVED_BOOK_CSV,
+    header: [
+      { id: "id", title: "id" },
+      { id: "title", title: "title" },
+      { id: "author", title: "author" },
+      { id: "desireRating", title: "desireRating" },
+      { id: "hasObtain", title: "hasObtain" },
+    ],
+  });
+
+  await csvBookStructure.writeRecords(savedBooks);
+
+}
 
 function cleanData(row: BookData) {
 
@@ -23,11 +43,11 @@ function cleanData(row: BookData) {
 }
 
 
-export function parseBookList(bookCSV) {
+export function parseBookList() {
   return new Promise((resolve, reject) => {
     const books: BookData[] = [];
 
-    fs.createReadStream(bookCSV)
+    fs.createReadStream(SAVED_BOOK_CSV)
       .pipe(csv())
       .on('data', (row) => {
         books.push(cleanData(row));
@@ -36,49 +56,3 @@ export function parseBookList(bookCSV) {
       .on('error', reject);
   });
 }
-
-
-// Function to change up the csv to fit better 
-//
-async function saveNewCSV() {
-  const BOOK_FILE = '../data/BookItDataBase.csv'
-
-  function muddleData(row: BookData) {
-    const [number, title] = row.title.split(".")
-    const hasObtain = row.hasObtain ? true : false
-
-    const bookListing = {
-      id: randomUUID(),
-      title: title.trim(),
-      author: row.author.trim(),
-      hasObtain,
-      desireRating: 0
-    }
-    return bookListing
-
-  }
-
-
-  const cleanUp = await parseBookList(BOOK_FILE)
-
-
-  const csvWriter = createObjectCsvWriter({
-    path: "../data/BookItDataBase.csv",
-    header: [
-      { id: "id", title: "id" },
-      { id: "title", title: "title" },
-      { id: "author", title: "author" },
-      { id: "desireRating", title: "desireRating" },
-      { id: "hasObtain", title: "hasObtain" },
-    ],
-  });
-
-
-
-  // await csvWriter.writeRecords(cleanUp);
-
-
-
-}
-
-
