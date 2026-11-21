@@ -4,7 +4,7 @@ interface ButtonProps {
   children: React.ReactNode
   cssClass?: string
   handleClick?: () => void; // not sure
-  buttonType?: 'base' | 'dialog'
+  buttonType?: 'base' | 'dialog' | "fill"
   type?: "submit" | "button"
 }
 
@@ -17,7 +17,9 @@ export function Button({ buttonType = 'base', type = "button", cssClass, handleC
     if (buttonType === 'base') {
       return "px-4 py-2 w-30 m-2"
     }
-
+    if (buttonType === 'fill') {
+      return "px-4 py-2 m-2 grid place-self-center"
+    }
     if (buttonType === 'dialog') {
       return "w-[25px] h-[25px] self-end"
 

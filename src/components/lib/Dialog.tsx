@@ -1,15 +1,18 @@
-import React, { useRef } from "react";
+import React, { useRef, useEffect } from "react";
 
 import { Button } from "./Button.tsx"
 import { Container } from "./Conatiner.tsx";
 
+
+
 interface DialogProps {
-  children: React.ReactNode
+  children: (closeDialog: () => void) => React.ReactNode;
   buttonLabel: string
 }
 
 
 export function Dialog({ buttonLabel = "open", children }: DialogProps) {
+
   const dialogRef = useRef<HTMLDialogElement>(null)
 
   const openDialog = () => {
@@ -43,13 +46,10 @@ export function Dialog({ buttonLabel = "open", children }: DialogProps) {
             <Button buttonType="dialog" handleClick={closeDialog}>
               X
             </Button>
-            {children}
-
+            {children(closeDialog)}
           </div>
         </Container>
       </dialog>
     </ >
   )
-
-
 }
