@@ -1,4 +1,9 @@
 import type { BookData } from "../../types/BookIt.ts"
+// import { bookStore } from "#/store/savedBookList.ts"
+// import { useSelector } from '@tanstack/react-store'
+
+import { ToggleSwitch } from "#/components/lib/ToggleSwitch.tsx"
+import { Button } from "#/components/lib/Button"
 
 
 interface BookListingProps {
@@ -6,22 +11,23 @@ interface BookListingProps {
 }
 
 function BookListing({ bookItem }: BookListingProps) {
-  const BookObtained = ({ obtained }: { obtained: boolean }) => (<p>{obtained ? "yes" : "no"}</p>)
-  const BookHeading = ({ headerTitle }: { headerTitle: string }) => <p className="font-bold">{headerTitle}</p>
+  const BookObtained = ({ obtained }: { obtained: boolean }) => (<ToggleSwitch obtained={obtained}></ToggleSwitch  >)
+  const BookHeading = ({ children }: { children: React.ReactNode }) => <p className="font-bold">{children}</p>
   const BookItem = ({ bookDetails }: { bookDetails: string }) => <p>{bookDetails}</p>
+  const BookTitle = ({ bookTitle }: { bookTitle: string }) => <a href={`book/${bookTitle}`}>{bookTitle}</a>
 
   const isItem = bookItem !== undefined
-
-  const headingStyle = isItem ? null : "border-b"
+  const headingStyle = isItem ? "none" : "border-b"
 
   return (
     <li
-      className={`grid grid-cols-4 text-left ${headingStyle}`}
+      className={`grid grid-cols-[150px_1fr_1fr_150px_50px]  text-left ${headingStyle} items-center`}
     >
-      {isItem ? <BookItem bookDetails={bookItem?.title} /> : <BookHeading headerTitle="Title" />}
-      {isItem ? <BookItem bookDetails={bookItem?.author} /> : <BookHeading headerTitle="Author" />}
-      {isItem ? <BookItem bookDetails={String(bookItem?.desireRating)} /> : <BookHeading headerTitle="Desired Rating" />}
-      {isItem ? <BookObtained obtained={bookItem.hasObtain} /> : <BookHeading headerTitle="Obtained" />}
+      {isItem ? <BookObtained obtained={bookItem.hasObtain} /> : <BookHeading>Obtained</BookHeading>}
+      {isItem ? <BookTitle bookTitle={bookItem?.title} /> : <BookHeading> Title</BookHeading>}
+      {isItem ? <BookItem bookDetails={bookItem?.author} /> : <BookHeading>Author</BookHeading>}
+      {isItem ? <BookItem bookDetails={String(bookItem?.desireRating)} /> : <BookHeading>Desired Rating</BookHeading>}
+      {isItem ? <Button buttonType="fill" >X</Button> : <BookHeading >Remove</BookHeading >}
     </li>
   )
 }
@@ -35,6 +41,7 @@ interface DesiredBookListingProps {
 
 export function DesiredBookListing({ desiredBooks }: DesiredBookListingProps) {
 
+
   if (desiredBooks.length === 0) {
     <div><p>No Books are in Play</p></div>
   }
@@ -45,5 +52,6 @@ export function DesiredBookListing({ desiredBooks }: DesiredBookListingProps) {
       {
         desiredBooks.map((x: BookData) => <BookListing key={x.id} bookItem={x} />)
       }
-    </ul>)
+    </ul>
+  )
 }

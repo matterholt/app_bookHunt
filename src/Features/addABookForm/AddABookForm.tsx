@@ -1,5 +1,5 @@
 import { Button } from "#/components/lib/Button"
-import { useState } from "react"
+import { useEffect, useRef, useState } from "react"
 
 import { addBook } from "#/serverActions/bookCollectionActions"
 
@@ -40,15 +40,34 @@ function TextInput({ lables }: TextInputProps) {
 
 
 
-export function AddABookForm() {
 
+interface AddABookFormProps {
 
-  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+}
+
+export function AddABookForm({ setDialogState }) {
+
+  const [status, setStatus] = useState("idle")
+
+  const formField = useRef<HTMLFormElement>(null)
+
+  function resetForm() {
+    if (!formField.current) return
+    formField?.current.reset()
+  }
+
+  async function handleSubmit(e) {
     e.preventDefault()
-    const formData = new FormData(e.currentTarget);
+    if (!formField.current) return
 
+    const formData = new FormData(formField?.current);
     const bookTitle = formData.get("bookTitle") as string
     const authorName = formData.get("authorName") as string
+
+    if ([bookTitle, authorName].some(x => x === "")) {
+      setStatus("missingInput")
+      return
+    }
 
     const bookData = {
       title: bookTitle,
@@ -58,23 +77,17 @@ export function AddABookForm() {
     };
 
 
-    await addBook({
+    const serverResults = await addBook({
       data: bookData
     })
 
-    if ([bookTitle, authorName].some(x => x === "")) {
-      console.log("need title and author")
-      return
-    }
-
-    console.log("added it", bookData)
-
+    setStatus(serverResults.status)
+    resetForm()
+    setDialogState()
   }
 
-
-
   return (
-    <form onSubmit={handleSubmit} className="flex flex-col w-full gap-5 p-5">
+    <form ref={formField} onSubmit={handleSubmit} className="flex flex-col w-full gap-5 p-5">
       <TextInput lables={{ id: "bookTitle", placeHolder: "Book Title", label: "Book Title" }} />
       <TextInput lables={{ id: "authorName", placeHolder: "Author", label: "Author Name" }} />
       <SelectOptions />

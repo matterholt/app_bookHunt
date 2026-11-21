@@ -7,6 +7,13 @@ import { randomUUID } from 'node:crypto';
 import type { BookData, BookDataCollecton } from '#/types/BookIt'
 import { parseBookList } from '#/utils/csvActions'
 
+export const getBookById = createServerFn({ method: "GET" })
+  .validator((data: { idOfBook: string }) => data)
+  .handler(async ({ data }) => {
+
+  })
+
+
 
 export const getBooks = createServerFn({ method: "GET" }).handler(async () => {
   const bookCollection = await parseBookList()
@@ -31,8 +38,7 @@ export const addBook = createServerFn({ method: "POST" })
 
 
       if (storedBooks.some(book => book.title === data.title)) {
-        console.log("title has been in the stored books")
-        return
+        return { status: "duplicated", message: "Book was already saved in database" }
       }
 
 
@@ -43,14 +49,12 @@ export const addBook = createServerFn({ method: "POST" })
         hasObtain: data.hasObtain,
         desireRating: data.desiredRating
       }
-      console.log("GEETT", newBookOnList)
       const updatedBooks = [...storedBooks, newBookOnList]
-
 
       await saveBookListToCSV(updatedBooks)
 
-      return newBookOnList
 
+      return { status: "success", message: "Book Added to Database" }
 
     } catch (error) {
       console.error('Failed to add Book:', error)

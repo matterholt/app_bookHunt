@@ -5,6 +5,7 @@ import { randomUUID } from 'node:crypto';
 import { createObjectCsvWriter } from "csv-writer";
 
 import type { BookData } from '#/types/BookIt';
+import { resolve } from 'node:dns';
 
 
 const SAVED_BOOK_CSV = "src/data/BookItDataBase.csv"
@@ -34,7 +35,7 @@ function cleanData(row: BookData) {
     id: row.id,
     title: row.title.trim(),
     author: row.author.trim(),
-    hasObtain: row.hasObtain === 'true',
+    hasObtain: row.hasObtain === 'true', // need to fix, but OK
     desireRating: Number(row.desireRating)
   }
 
@@ -45,6 +46,7 @@ function cleanData(row: BookData) {
 
 export function parseBookList() {
   return new Promise((resolve, reject) => {
+    // wonder if should have this data
     const books: BookData[] = [];
 
     fs.createReadStream(SAVED_BOOK_CSV)
@@ -55,4 +57,8 @@ export function parseBookList() {
       .on('end', () => resolve(books))
       .on('error', reject);
   });
+
+
 }
+
+

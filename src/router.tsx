@@ -7,6 +7,12 @@ export function getRouter() {
     scrollRestoration: true,
     defaultPreload: 'intent',
     defaultPreloadStaleTime: 0,
+    defaultNotFoundComponent: () => (
+      <div>
+        <h1>404 - Not Found</h1>
+        <p>The requested page could not be found.</p>
+      </div>
+    ),
   })
 
   return router
