@@ -1,0 +1,1238 @@
+[
+  {
+    "title": "The Great Gatsby",
+    "author": "F. Scott Fitzgerald",
+    "genre": "Literary fiction",
+    "themes": [
+      "American Dream",
+      "wealth and class",
+      "obsession",
+      "illusion"
+    ],
+    "description": "Nick Carraway recounts the life of his wealthy neighbor Jay Gatsby, whose pursuit of Daisy Buchanan exposes the illusions and divisions of Jazz Age America."
+  },
+  {
+    "title": "The Prince",
+    "author": "Niccolò Machiavelli",
+    "genre": "Political philosophy",
+    "themes": [
+      "power",
+      "leadership",
+      "political realism",
+      "morality"
+    ],
+    "description": "A political treatise examining how rulers acquire and maintain power, often by balancing practical necessity against conventional morality."
+  },
+  {
+    "title": "Band of Brothers",
+    "author": "Stephen E. Ambrose",
+    "genre": "Military history",
+    "themes": [
+      "comradeship",
+      "leadership",
+      "sacrifice",
+      "war"
+    ],
+    "description": "An account of Easy Company, 506th Parachute Infantry Regiment, following its soldiers from training through their World War II campaigns in Europe."
+  },
+  {
+    "title": "The Republic",
+    "author": "Plato",
+    "genre": "Political philosophy",
+    "themes": [
+      "justice",
+      "ideal government",
+      "education",
+      "knowledge"
+    ],
+    "description": "Through dialogues led by Socrates, Plato explores justice, the organization of an ideal state, and the relationship between knowledge and good government."
+  },
+  {
+    "title": "The Wealth of Nations",
+    "author": "Adam Smith",
+    "genre": "Economics",
+    "themes": [
+      "division of labor",
+      "markets",
+      "trade",
+      "economic development"
+    ],
+    "description": "An investigation into how nations generate prosperity through specialization, exchange, and institutions, alongside critiques of mercantilism."
+  },
+  {
+    "title": "The Call of the Wild",
+    "author": "Jack London",
+    "genre": "Adventure fiction",
+    "themes": [
+      "survival",
+      "instinct",
+      "adaptation",
+      "wilderness"
+    ],
+    "description": "Buck, a domesticated dog stolen into service during the Klondike Gold Rush, adapts to harsh conditions and discovers his ancestral instincts."
+  },
+  {
+    "title": "Theodore Roosevelt Trilogy",
+    "author": "Edmund Morris",
+    "genre": "Biography",
+    "themes": [
+      "leadership",
+      "public service",
+      "ambition",
+      "personal transformation"
+    ],
+    "description": "A three-volume biography tracing Theodore Roosevelt's youth, presidency, and later life: The Rise of Theodore Roosevelt, Theodore Rex, and Colonel Roosevelt."
+  },
+  {
+    "title": "1984",
+    "author": "George Orwell",
+    "genre": "Dystopian fiction",
+    "themes": [
+      "totalitarianism",
+      "surveillance",
+      "propaganda",
+      "control of truth"
+    ],
+    "description": "Winston Smith attempts to preserve independent thought and personal love in a society ruled through surveillance, historical revision, and political terror."
+  },
+  {
+    "title": "Brave New World",
+    "author": "Aldous Huxley",
+    "genre": "Dystopian science fiction",
+    "themes": [
+      "social conditioning",
+      "consumerism",
+      "individuality",
+      "engineered happiness"
+    ],
+    "description": "A technologically managed society maintains stability through biological engineering, conditioning, and pleasure, raising questions about freedom and human fulfillment."
+  },
+  {
+    "title": "How to Win Friends and Influence People",
+    "author": "Dale Carnegie",
+    "genre": "Self-help",
+    "themes": [
+      "communication",
+      "empathy",
+      "relationships",
+      "persuasion"
+    ],
+    "description": "A practical guide to interpersonal relationships that emphasizes sincere appreciation, attentive listening, and understanding other people's perspectives."
+  },
+  {
+    "title": "Roman Honor",
+    "author": "Carlin A. Barton",
+    "genre": "Ancient history",
+    "themes": [
+      "honor",
+      "shame",
+      "social identity",
+      "competition"
+    ],
+    "description": "A study of ancient Roman emotional and moral life, examining how honor, public judgment, and competitive display shaped identity and behavior."
+  },
+  {
+    "title": "Catch-22",
+    "author": "Joseph Heller",
+    "genre": "Satirical war fiction",
+    "themes": [
+      "bureaucracy",
+      "absurdity",
+      "survival",
+      "military authority"
+    ],
+    "description": "American bombardier John Yossarian struggles to escape combat while trapped in the contradictory rules and self-serving bureaucracy of World War II."
+  },
+  {
+    "title": "Slaughterhouse-Five",
+    "author": "Kurt Vonnegut",
+    "genre": "Satirical science fiction",
+    "themes": [
+      "war trauma",
+      "time",
+      "fatalism",
+      "memory"
+    ],
+    "description": "Billy Pilgrim becomes unstuck in time in a fragmented narrative connecting his ordinary life, wartime captivity, and the destruction of Dresden."
+  },
+  {
+    "title": "The Brothers Karamazov",
+    "author": "Fyodor Dostoevsky",
+    "genre": "Philosophical fiction",
+    "themes": [
+      "faith and doubt",
+      "free will",
+      "moral responsibility",
+      "family conflict"
+    ],
+    "description": "The conflicts surrounding a troubled father and his sons culminate in a murder case that becomes an exploration of belief, guilt, and human freedom."
+  },
+  {
+    "title": "The Sun Also Rises",
+    "author": "Ernest Hemingway",
+    "genre": "Modernist fiction",
+    "themes": [
+      "disillusionment",
+      "war's aftermath",
+      "love",
+      "aimlessness"
+    ],
+    "description": "Jake Barnes and a circle of expatriates travel through France and Spain, seeking meaning and connection amid the emotional damage left by World War I."
+  },
+  {
+    "title": "For Whom the Bell Tolls",
+    "author": "Ernest Hemingway",
+    "genre": "War fiction",
+    "themes": [
+      "duty",
+      "solidarity",
+      "love",
+      "sacrifice"
+    ],
+    "description": "An American volunteer joins Republican guerrillas during the Spanish Civil War to destroy a bridge, confronting the personal costs of political commitment."
+  },
+  {
+    "title": "Swiss Family Robinson",
+    "author": "Johann David Wyss",
+    "genre": "Adventure fiction",
+    "themes": [
+      "family cooperation",
+      "resourcefulness",
+      "survival",
+      "faith"
+    ],
+    "description": "A shipwrecked Swiss family builds a new life on an island using practical skills, cooperation, and knowledge of the natural world."
+  },
+  {
+    "title": "On the Road",
+    "author": "Jack Kerouac",
+    "genre": "Beat fiction",
+    "themes": [
+      "freedom",
+      "friendship",
+      "restlessness",
+      "search for meaning"
+    ],
+    "description": "Sal Paradise travels across America with the impulsive Dean Moriarty in a loosely autobiographical exploration of movement, music, and unconventional living."
+  },
+  {
+    "title": "The Dharma Bums",
+    "author": "Jack Kerouac",
+    "genre": "Beat fiction",
+    "themes": [
+      "Buddhism",
+      "nature",
+      "spiritual searching",
+      "nonconformity"
+    ],
+    "description": "Writer Ray Smith explores Buddhist ideas, mountain climbing, poetry, and bohemian friendship while seeking a more liberated way of life."
+  },
+  {
+    "title": "The Iliad & The Odyssey",
+    "author": "Homer (traditionally attributed)",
+    "genre": "Epic poetry",
+    "themes": [
+      "heroism",
+      "honor",
+      "war",
+      "homecoming"
+    ],
+    "description": "Two Greek epics recount Achilles' anger during the Trojan War and Odysseus' difficult journey home, exploring mortality, loyalty, and human struggle."
+  },
+  {
+    "title": "Walden",
+    "author": "Henry David Thoreau",
+    "genre": "Philosophical nature writing",
+    "themes": [
+      "simple living",
+      "self-reliance",
+      "nature",
+      "deliberate living"
+    ],
+    "description": "Thoreau reflects on his experiment living near Walden Pond, questioning material excess and exploring attention, independence, and humanity's relationship with nature."
+  },
+  {
+    "title": "The Lord of the Flies",
+    "author": "William Golding",
+    "genre": "Allegorical fiction",
+    "themes": [
+      "civilization and violence",
+      "power",
+      "fear",
+      "loss of innocence"
+    ],
+    "description": "Published as Lord of the Flies, this novel follows stranded schoolboys whose attempts at self-government collapse into rivalry and violence."
+  },
+  {
+    "title": "Atlas Shrugged",
+    "author": "Ayn Rand",
+    "genre": "Philosophical fiction",
+    "themes": [
+      "individualism",
+      "capitalism",
+      "productive achievement",
+      "state coercion"
+    ],
+    "description": "As an industrial society deteriorates and leading innovators disappear, railroad executive Dagny Taggart investigates a mystery that dramatizes Rand's philosophy of Objectivism."
+  },
+  {
+    "title": "The Boy Scout Handbook (1st Edition)",
+    "author": "Boy Scouts of America",
+    "genre": "Outdoor skills handbook",
+    "themes": [
+      "preparedness",
+      "self-reliance",
+      "citizenship",
+      "outdoor skills"
+    ],
+    "description": "An early American Scouting manual combining instruction in camping, first aid, woodcraft, and civic responsibility with guidance on character development."
+  },
+  {
+    "title": "Into Thin Air",
+    "author": "Jon Krakauer",
+    "genre": "Adventure memoir",
+    "themes": [
+      "risk",
+      "survival",
+      "ambition",
+      "responsibility"
+    ],
+    "description": "Krakauer recounts his experience of the 1996 Mount Everest disaster and examines the decisions, pressures, and conditions surrounding the tragedy."
+  },
+  {
+    "title": "King Solomon’s Mines",
+    "author": "H. Rider Haggard",
+    "genre": "Adventure fiction",
+    "themes": [
+      "exploration",
+      "treasure",
+      "loyalty",
+      "colonialism"
+    ],
+    "description": "Allan Quatermain leads an expedition into southern Africa to find a missing man and the legendary diamond mines associated with King Solomon."
+  },
+  {
+    "title": "A River Runs Through It",
+    "author": "Norman Maclean",
+    "genre": "Autobiographical fiction",
+    "themes": [
+      "family",
+      "nature",
+      "faith",
+      "loss"
+    ],
+    "description": "The title novella of Maclean's collection connects fly-fishing in Montana with memories of family, particularly the bond between two very different brothers."
+  },
+  {
+    "title": "The Autobiography of Malcolm X",
+    "author": "Malcolm X with Alex Haley",
+    "genre": "Autobiography",
+    "themes": [
+      "racial justice",
+      "identity",
+      "religious transformation",
+      "self-education"
+    ],
+    "description": "Malcolm X recounts his development from a troubled youth into an influential Black political and religious leader whose views continued to evolve."
+  },
+  {
+    "title": "The Count of Monte Cristo",
+    "author": "Alexandre Dumas",
+    "genre": "Historical adventure fiction",
+    "themes": [
+      "revenge",
+      "justice",
+      "betrayal",
+      "redemption"
+    ],
+    "description": "Wrongfully imprisoned Edmond Dantès escapes, acquires a fortune, and adopts a new identity to punish those responsible for his downfall."
+  },
+  {
+    "title": "All Quiet on the Western Front",
+    "author": "Erich Maria Remarque",
+    "genre": "War fiction",
+    "themes": [
+      "disillusionment",
+      "trauma",
+      "comradeship",
+      "dehumanization"
+    ],
+    "description": "Young German soldier Paul Bäumer experiences the brutality of World War I and the widening gulf between front-line reality and civilian expectations."
+  },
+  {
+    "title": "Pride & Prejudice",
+    "author": "Jane Austen",
+    "genre": "Romantic fiction",
+    "themes": [
+      "class",
+      "marriage",
+      "first impressions",
+      "self-knowledge"
+    ],
+    "description": "Elizabeth Bennet and Fitzwilliam Darcy confront their mistaken judgments of one another within a society shaped by inheritance, reputation, and marriage."
+  },
+  {
+    "title": "The Art of War",
+    "author": "Sun Tzu (traditionally attributed)",
+    "genre": "Military strategy",
+    "themes": [
+      "strategy",
+      "adaptability",
+      "intelligence",
+      "efficient victory"
+    ],
+    "description": "An ancient Chinese military treatise emphasizing preparation, knowledge of opponents, deception, and achieving objectives while minimizing costly conflict."
+  },
+  {
+    "title": "Lives",
+    "author": "Plutarch",
+    "genre": "Classical biography",
+    "themes": [
+      "character",
+      "leadership",
+      "virtue",
+      "political ambition"
+    ],
+    "description": "Also known as Parallel Lives, this collection pairs biographies of Greek and Roman figures to examine their characters, achievements, and moral failings."
+  },
+  {
+    "title": "The Bible",
+    "author": "Various authors",
+    "genre": "Religious scripture",
+    "themes": [
+      "faith",
+      "covenant",
+      "justice",
+      "redemption"
+    ],
+    "description": "A collection of sacred writings encompassing narrative, law, poetry, prophecy, letters, and wisdom; its contents vary among Jewish and Christian traditions."
+  },
+  {
+    "title": "Lonesome Dove",
+    "author": "Larry McMurtry",
+    "genre": "Western fiction",
+    "themes": [
+      "friendship",
+      "aging",
+      "frontier life",
+      "loss"
+    ],
+    "description": "Two former Texas Rangers lead a cattle drive to Montana, encountering danger, old attachments, and the limits of their frontier dreams."
+  },
+  {
+    "title": "After Virtue",
+    "author": "Alasdair MacIntyre",
+    "genre": "Moral philosophy",
+    "themes": [
+      "virtue ethics",
+      "moral tradition",
+      "community",
+      "human purpose"
+    ],
+    "description": "MacIntyre critiques modern moral disagreement and argues for recovering an account of virtue grounded in practices, traditions, and shared human purposes."
+  },
+  {
+    "title": "The Maltese Falcon",
+    "author": "Dashiell Hammett",
+    "genre": "Hard-boiled detective fiction",
+    "themes": [
+      "greed",
+      "deception",
+      "loyalty",
+      "personal ethics"
+    ],
+    "description": "Private detective Sam Spade becomes entangled with criminals and competing stories while investigating murders connected to a valuable jeweled statuette."
+  },
+  {
+    "title": "To Kill A Mockingbird",
+    "author": "Harper Lee",
+    "genre": "Southern Gothic fiction",
+    "themes": [
+      "racial injustice",
+      "empathy",
+      "moral courage",
+      "childhood"
+    ],
+    "description": "Scout Finch observes prejudice and courage in an Alabama town as her father, Atticus, defends a Black man falsely accused of rape."
+  },
+  {
+    "title": "The Killer Angels",
+    "author": "Michael Shaara",
+    "genre": "Historical war fiction",
+    "themes": [
+      "leadership",
+      "duty",
+      "divided loyalties",
+      "cost of war"
+    ],
+    "description": "A fictionalized account of the Gettysburg campaign presents the battle through the perspectives of key Union and Confederate officers."
+  },
+  {
+    "title": "The Autobiography of Benjamin Franklin",
+    "author": "Benjamin Franklin",
+    "genre": "Autobiography",
+    "themes": [
+      "self-improvement",
+      "industry",
+      "education",
+      "civic responsibility"
+    ],
+    "description": "Franklin recounts portions of his life and career while explaining his efforts to cultivate useful habits, moral character, and public service."
+  },
+  {
+    "title": "The Histories",
+    "author": "Herodotus",
+    "genre": "Ancient history",
+    "themes": [
+      "cultural difference",
+      "empire",
+      "war",
+      "historical inquiry"
+    ],
+    "description": "An investigation into the conflicts between Greeks and Persians, interwoven with accounts of the customs, geography, and traditions of many peoples."
+  },
+  {
+    "title": "From Here to Eternity",
+    "author": "James Jones",
+    "genre": "Military fiction",
+    "themes": [
+      "institutional power",
+      "individual conscience",
+      "desire",
+      "military life"
+    ],
+    "description": "American soldiers stationed in Hawaii before Pearl Harbor navigate coercive hierarchies, personal loyalties, romantic entanglements, and the demands of army life."
+  },
+  {
+    "title": "The Thin Red Line",
+    "author": "James Jones",
+    "genre": "War fiction",
+    "themes": [
+      "fear",
+      "survival",
+      "comradeship",
+      "military hierarchy"
+    ],
+    "description": "An American infantry company fights on Guadalcanal, revealing how combat exposes individual fears, ambitions, and conflicting responses to violence."
+  },
+  {
+    "title": "Zen and the Art of Motorcycle Maintenance",
+    "author": "Robert M. Pirsig",
+    "genre": "Philosophical autobiography",
+    "themes": [
+      "quality",
+      "rationality",
+      "mental health",
+      "parent-child relationships"
+    ],
+    "description": "A motorcycle journey with the narrator's son becomes a framework for exploring quality, technical work, philosophical inquiry, and a fractured personal past."
+  },
+  {
+    "title": "The Long Goodbye",
+    "author": "Raymond Chandler",
+    "genre": "Hard-boiled detective fiction",
+    "themes": [
+      "loyalty",
+      "corruption",
+      "class",
+      "disillusionment"
+    ],
+    "description": "Philip Marlowe's friendship with a troubled war veteran draws him into a murder investigation involving wealthy families, damaged relationships, and concealed motives."
+  },
+  {
+    "title": "Self-Reliance & Other Essays",
+    "author": "Ralph Waldo Emerson",
+    "genre": "Philosophical essays",
+    "themes": [
+      "individualism",
+      "nonconformity",
+      "intuition",
+      "spiritual independence"
+    ],
+    "description": "Essays advocating independent judgment and trust in personal insight, with additional subjects varying by edition."
+  },
+  {
+    "title": "Ulysses",
+    "author": "James Joyce",
+    "genre": "Modernist fiction",
+    "themes": [
+      "ordinary life",
+      "identity",
+      "consciousness",
+      "belonging"
+    ],
+    "description": "Following Leopold Bloom, Stephen Dedalus, and Molly Bloom through a Dublin day, Joyce transforms everyday experience through stylistic experimentation and Homeric parallels."
+  },
+  {
+    "title": "The Master and Margarita",
+    "author": "Mikhail Bulgakov",
+    "genre": "Satirical fantasy",
+    "themes": [
+      "artistic freedom",
+      "good and evil",
+      "love",
+      "political repression"
+    ],
+    "description": "The Devil's visit to Soviet Moscow intersects with a persecuted writer's love story and a parallel narrative about Pontius Pilate."
+  },
+  {
+    "title": "The Road",
+    "author": "Cormac McCarthy",
+    "genre": "Post-apocalyptic fiction",
+    "themes": [
+      "parental love",
+      "survival",
+      "morality",
+      "hope"
+    ],
+    "description": "A father and son travel through a devastated landscape, struggling to survive without surrendering their remaining sense of humanity."
+  },
+  {
+    "title": "Steppenwolf",
+    "author": "Hermann Hesse",
+    "genre": "Psychological fiction",
+    "themes": [
+      "alienation",
+      "divided identity",
+      "self-discovery",
+      "bourgeois society"
+    ],
+    "description": "Isolated intellectual Harry Haller confronts his fragmented identity through new relationships and surreal experiences that challenge his understanding of himself."
+  },
+  {
+    "title": "The Book of Deeds of Arms and Chivalry",
+    "author": "Christine de Pizan",
+    "genre": "Military treatise",
+    "themes": [
+      "chivalry",
+      "military leadership",
+      "just war",
+      "law of arms"
+    ],
+    "description": "Also published as The Book of Deeds of Arms and of Chivalry, this work examines military practice, command, and the legal and ethical conduct of warfare."
+  },
+  {
+    "title": "Don Quixote",
+    "author": "Miguel de Cervantes",
+    "genre": "Satirical adventure fiction",
+    "themes": [
+      "idealism and reality",
+      "imagination",
+      "friendship",
+      "chivalry"
+    ],
+    "description": "An avid reader of chivalric romances reinvents himself as a knight and travels with Sancho Panza, repeatedly mistaking ordinary life for heroic adventure."
+  },
+  {
+    "title": "Invisible Man",
+    "author": "Ralph Ellison",
+    "genre": "Literary fiction",
+    "themes": [
+      "racial identity",
+      "social invisibility",
+      "political manipulation",
+      "self-definition"
+    ],
+    "description": "An unnamed Black narrator recounts experiences in the American South and Harlem while struggling against identities imposed on him by others."
+  },
+  {
+    "title": "The Adventures of Huckleberry Finn",
+    "author": "Mark Twain",
+    "genre": "Adventure satire",
+    "themes": [
+      "freedom",
+      "racism",
+      "conscience",
+      "friendship"
+    ],
+    "description": "Huck Finn travels down the Mississippi River with Jim, an enslaved man seeking freedom, and confronts the contradictions of the society around them."
+  },
+  {
+    "title": "Leviathan",
+    "author": "Thomas Hobbes",
+    "genre": "Political philosophy",
+    "themes": [
+      "social contract",
+      "sovereignty",
+      "security",
+      "political authority"
+    ],
+    "description": "Hobbes argues that people establish a powerful sovereign to escape the insecurity of a condition without common political authority."
+  },
+  {
+    "title": "Nicomachean Ethics",
+    "author": "Aristotle",
+    "genre": "Moral philosophy",
+    "themes": [
+      "human flourishing",
+      "virtue",
+      "practical wisdom",
+      "friendship"
+    ],
+    "description": "Aristotle examines the good human life, arguing that flourishing depends on virtuous activity cultivated through habit, judgment, and relationships."
+  },
+  {
+    "title": "Cyrano de Bergerac",
+    "author": "Edmond Rostand",
+    "genre": "Verse drama",
+    "themes": [
+      "unrequited love",
+      "appearance and worth",
+      "courage",
+      "self-sacrifice"
+    ],
+    "description": "A gifted swordsman and poet, insecure about his appearance, helps another man court the woman he secretly loves."
+  },
+  {
+    "title": "The Last Lion Trilogy",
+    "author": "William Manchester; Paul Reid co-authored the third volume",
+    "genre": "Biography",
+    "themes": [
+      "leadership",
+      "political conviction",
+      "war",
+      "perseverance"
+    ],
+    "description": "A three-volume biography of Winston Churchill tracing his upbringing, political career, opposition to appeasement, and wartime leadership."
+  },
+  {
+    "title": "The Naked and the Dead",
+    "author": "Norman Mailer",
+    "genre": "War fiction",
+    "themes": [
+      "power",
+      "class",
+      "fear",
+      "dehumanization"
+    ],
+    "description": "American soldiers fighting on a fictional Pacific island reveal the tensions between individual survival, military authority, and social hierarchy."
+  },
+  {
+    "title": "This Boy’s Life",
+    "author": "Tobias Wolff",
+    "genre": "Memoir",
+    "themes": [
+      "adolescence",
+      "family abuse",
+      "self-invention",
+      "identity"
+    ],
+    "description": "Wolff recalls an unsettled childhood with his mother and an abusive stepfather, examining the stories and ambitions through which he tried to remake himself."
+  },
+  {
+    "title": "Hatchet",
+    "author": "Gary Paulsen",
+    "genre": "Young adult survival fiction",
+    "themes": [
+      "resilience",
+      "resourcefulness",
+      "self-reliance",
+      "nature"
+    ],
+    "description": "After surviving a plane crash in the Canadian wilderness, thirteen-year-old Brian Robeson must learn to obtain food, build shelter, and endure isolation."
+  },
+  {
+    "title": "Resilience",
+    "author": "Eric Greitens",
+    "genre": "Self-help",
+    "themes": [
+      "adversity",
+      "purpose",
+      "discipline",
+      "personal responsibility"
+    ],
+    "description": "Interpreted as Resilience: Hard-Won Wisdom for Living a Better Life, a collection of letters drawing on philosophy and experience to discuss responding to hardship."
+  },
+  {
+    "title": "Tarzan of the Apes",
+    "author": "Edgar Rice Burroughs",
+    "genre": "Adventure fiction",
+    "themes": [
+      "nature and nurture",
+      "identity",
+      "civilization",
+      "belonging"
+    ],
+    "description": "An English aristocrat's orphaned son grows up among apes in Africa and later encounters humans who challenge his understanding of his origins."
+  },
+  {
+    "title": "Thus Spoke Zarathustra",
+    "author": "Friedrich Nietzsche",
+    "genre": "Philosophical fiction",
+    "themes": [
+      "self-overcoming",
+      "creation of values",
+      "eternal recurrence",
+      "critique of morality"
+    ],
+    "description": "Through the teachings of the fictional prophet Zarathustra, Nietzsche explores humanity's possibilities after the decline of traditional religious and moral certainties."
+  },
+  {
+    "title": "The Federalist Papers",
+    "author": "Alexander Hamilton, James Madison, and John Jay",
+    "genre": "Political essays",
+    "themes": [
+      "constitutional government",
+      "federalism",
+      "faction",
+      "checks and balances"
+    ],
+    "description": "A collection of eighty-five essays defending ratification of the United States Constitution and explaining the proposed federal government's structure."
+  },
+  {
+    "title": "The Godfather",
+    "author": "Mario Puzo",
+    "genre": "Crime fiction",
+    "themes": [
+      "family loyalty",
+      "power",
+      "corruption",
+      "assimilation"
+    ],
+    "description": "The Corleone crime family navigates rivalries and succession as Michael Corleone becomes increasingly involved in the violent world he once resisted."
+  },
+  {
+    "title": "Moby Dick",
+    "author": "Herman Melville",
+    "genre": "Maritime fiction",
+    "themes": [
+      "obsession",
+      "revenge",
+      "nature",
+      "limits of knowledge"
+    ],
+    "description": "Published as Moby-Dick, this novel follows sailor Ishmael aboard the Pequod as Captain Ahab pursues the white whale that maimed him."
+  },
+  {
+    "title": "Frankenstein",
+    "author": "Mary Shelley",
+    "genre": "Gothic science fiction",
+    "themes": [
+      "scientific responsibility",
+      "alienation",
+      "ambition",
+      "creation"
+    ],
+    "description": "Victor Frankenstein creates a living being but rejects it, setting in motion a tragedy shaped by abandonment, vengeance, and failed responsibility."
+  },
+  {
+    "title": "Hamlet",
+    "author": "William Shakespeare",
+    "genre": "Tragedy",
+    "themes": [
+      "revenge",
+      "uncertainty",
+      "mortality",
+      "political corruption"
+    ],
+    "description": "The prince of Denmark investigates his father's death and struggles to act against his uncle amid deception, grief, and a deteriorating royal court."
+  },
+  {
+    "title": "A Tale of Two Cities",
+    "author": "Charles Dickens",
+    "genre": "Historical fiction",
+    "themes": [
+      "revolution",
+      "sacrifice",
+      "resurrection",
+      "social injustice"
+    ],
+    "description": "Lives in London and Paris become entwined during the French Revolution in a story of political violence, family secrets, and redemptive sacrifice."
+  },
+  {
+    "title": "Revolutionary Road",
+    "author": "Richard Yates",
+    "genre": "Literary fiction",
+    "themes": [
+      "suburban conformity",
+      "marital conflict",
+      "self-deception",
+      "thwarted ambition"
+    ],
+    "description": "Frank and April Wheeler imagine escaping suburban dissatisfaction, but their conflicting desires and illusions place their marriage under growing strain."
+  },
+  {
+    "title": "The Divine Comedy",
+    "author": "Dante Alighieri",
+    "genre": "Epic poetry",
+    "themes": [
+      "sin",
+      "redemption",
+      "divine justice",
+      "spiritual transformation"
+    ],
+    "description": "Dante's imagined journey through Hell, Purgatory, and Paradise explores moral responsibility, political life, love, and the soul's movement toward God."
+  },
+  {
+    "title": "The Boys of Summer",
+    "author": "Roger Kahn",
+    "genre": "Sports memoir and history",
+    "themes": [
+      "baseball",
+      "memory",
+      "aging",
+      "racial integration"
+    ],
+    "description": "Kahn recalls covering the Brooklyn Dodgers and revisits former players to examine their lives beyond baseball and the passage of time."
+  },
+  {
+    "title": "A Separate Peace",
+    "author": "John Knowles",
+    "genre": "Coming-of-age fiction",
+    "themes": [
+      "friendship",
+      "jealousy",
+      "guilt",
+      "loss of innocence"
+    ],
+    "description": "At a New England boarding school during World War II, Gene's relationship with his charismatic friend Finny becomes entangled with rivalry and guilt."
+  },
+  {
+    "title": "The Stranger",
+    "author": "Albert Camus",
+    "genre": "Philosophical fiction",
+    "themes": [
+      "absurdity",
+      "alienation",
+      "social judgment",
+      "mortality"
+    ],
+    "description": "An emotionally detached man in French-ruled Algeria commits a killing and faces a trial that judges both his crime and his refusal to follow social expectations."
+  },
+  {
+    "title": "Robinson Crusoe",
+    "author": "Daniel Defoe",
+    "genre": "Adventure fiction",
+    "themes": [
+      "survival",
+      "religious providence",
+      "self-reliance",
+      "colonialism"
+    ],
+    "description": "A shipwrecked sailor spends years building a life on an island, reflecting on faith, labor, isolation, and his encounters with others."
+  },
+  {
+    "title": "The 7 Habits of Highly Successful People",
+    "author": "Stephen R. Covey",
+    "genre": "Self-help",
+    "themes": [
+      "personal effectiveness",
+      "principle-centered living",
+      "prioritization",
+      "cooperation"
+    ],
+    "description": "Interpreted as The 7 Habits of Highly Effective People, a guide to developing proactive habits, clear goals, effective relationships, and continuous renewal."
+  },
+  {
+    "title": "Cannery Row",
+    "author": "John Steinbeck",
+    "genre": "Literary fiction",
+    "themes": [
+      "community",
+      "dignity",
+      "friendship",
+      "life on the margins"
+    ],
+    "description": "An interconnected portrait of Monterey's waterfront residents centers on their eccentric relationships and a well-intentioned effort to honor a local marine biologist."
+  },
+  {
+    "title": "Treasure Island",
+    "author": "Robert Louis Stevenson",
+    "genre": "Adventure fiction",
+    "themes": [
+      "greed",
+      "courage",
+      "betrayal",
+      "coming of age"
+    ],
+    "description": "Young Jim Hawkins joins a voyage to find buried treasure and discovers that the crew includes pirates led by the charismatic Long John Silver."
+  },
+  {
+    "title": "A Confederacy of Dunces",
+    "author": "John Kennedy Toole",
+    "genre": "Comic fiction",
+    "themes": [
+      "social alienation",
+      "self-delusion",
+      "eccentricity",
+      "work"
+    ],
+    "description": "The grandiose and combative Ignatius J. Reilly moves through New Orleans, generating chaos as his lofty opinions collide with ordinary responsibilities."
+  },
+  {
+    "title": "Native Son",
+    "author": "Richard Wright",
+    "genre": "Social protest fiction",
+    "themes": [
+      "systemic racism",
+      "poverty",
+      "fear",
+      "restricted opportunity"
+    ],
+    "description": "Bigger Thomas, a young Black man in Chicago, becomes caught in a sequence of violence shaped by segregation, fear, and severely limited possibilities."
+  },
+  {
+    "title": "The Great Railway Bazaar",
+    "author": "Paul Theroux",
+    "genre": "Travel literature",
+    "themes": [
+      "travel",
+      "cultural encounter",
+      "observation",
+      "dislocation"
+    ],
+    "description": "Theroux recounts a largely rail-based journey from Europe across Asia and back, focusing on fellow travelers, places, and the experience of movement."
+  },
+  {
+    "title": "The Last of the Mohicans",
+    "author": "James Fenimore Cooper",
+    "genre": "Historical adventure fiction",
+    "themes": [
+      "frontier conflict",
+      "loyalty",
+      "cultural encounter",
+      "colonial warfare"
+    ],
+    "description": "During the French and Indian War, Hawkeye and his Mohican companions attempt to protect two sisters amid competing military and personal loyalties."
+  },
+  {
+    "title": "The Grapes of Wrath",
+    "author": "John Steinbeck",
+    "genre": "Social realist fiction",
+    "themes": [
+      "economic injustice",
+      "migration",
+      "family solidarity",
+      "human dignity"
+    ],
+    "description": "The Joad family leaves Dust Bowl Oklahoma for California, where migrant labor conditions test their hopes, survival, and commitment to one another."
+  },
+  {
+    "title": "Education of a Wandering Man",
+    "author": "Louis L'Amour",
+    "genre": "Memoir",
+    "themes": [
+      "self-education",
+      "reading",
+      "travel",
+      "lifelong learning"
+    ],
+    "description": "L'Amour reflects on the books, jobs, journeys, and encounters that shaped his education outside formal institutions and informed his writing."
+  },
+  {
+    "title": "Les Miserables",
+    "author": "Victor Hugo",
+    "genre": "Historical fiction",
+    "themes": [
+      "redemption",
+      "justice and mercy",
+      "poverty",
+      "social reform"
+    ],
+    "description": "Former convict Jean Valjean seeks a moral new life while pursued by Inspector Javert against the backdrop of social conflict in nineteenth-century France."
+  },
+  {
+    "title": "Man’s Search for Meaning",
+    "author": "Viktor E. Frankl",
+    "genre": "Memoir and psychology",
+    "themes": [
+      "meaning",
+      "suffering",
+      "human dignity",
+      "inner freedom"
+    ],
+    "description": "Frankl connects his experiences in Nazi concentration camps with logotherapy, an approach to psychotherapy centered on the human search for meaning."
+  },
+  {
+    "title": "The Outsiders",
+    "author": "S. E. Hinton",
+    "genre": "Young adult fiction",
+    "themes": [
+      "class conflict",
+      "belonging",
+      "loyalty",
+      "loss of innocence"
+    ],
+    "description": "Ponyboy Curtis navigates violent tensions between working-class Greasers and affluent Socs while struggling to understand identity, grief, and shared humanity."
+  },
+  {
+    "title": "One Hundred Years of Solitude",
+    "author": "Gabriel García Márquez",
+    "genre": "Magical realism",
+    "themes": [
+      "cyclical history",
+      "family",
+      "solitude",
+      "memory"
+    ],
+    "description": "Several generations of the Buendía family experience love, war, prosperity, and decline in the fictional town of Macondo."
+  },
+  {
+    "title": "Gates of Fire",
+    "author": "Steven Pressfield",
+    "genre": "Historical war fiction",
+    "themes": [
+      "courage",
+      "comradeship",
+      "discipline",
+      "sacrifice"
+    ],
+    "description": "A fictional survivor recounts Spartan training and the stand at Thermopylae, exploring the relationships and beliefs that sustain warriors under extreme pressure."
+  },
+  {
+    "title": "Paradise Lost",
+    "author": "John Milton",
+    "genre": "Epic poetry",
+    "themes": [
+      "free will",
+      "disobedience",
+      "temptation",
+      "divine justice"
+    ],
+    "description": "Milton retells Satan's rebellion and the fall of Adam and Eve in an epic examination of freedom, responsibility, and humanity's relationship with God."
+  },
+  {
+    "title": "Fahrenheit 451",
+    "author": "Ray Bradbury",
+    "genre": "Dystopian science fiction",
+    "themes": [
+      "censorship",
+      "conformity",
+      "mass entertainment",
+      "intellectual freedom"
+    ],
+    "description": "Guy Montag, a fireman employed to burn books, begins questioning a society that suppresses difficult ideas and discourages reflective thought."
+  },
+  {
+    "title": "Oil!",
+    "author": "Upton Sinclair",
+    "genre": "Social protest fiction",
+    "themes": [
+      "capitalism",
+      "labor conflict",
+      "political corruption",
+      "class consciousness"
+    ],
+    "description": "The son of a California oil magnate becomes increasingly troubled by the exploitation and political influence surrounding his father's industry."
+  },
+  {
+    "title": "Fear and Trembling",
+    "author": "Søren Kierkegaard",
+    "genre": "Religious philosophy",
+    "themes": [
+      "faith",
+      "ethical obligation",
+      "paradox",
+      "individual responsibility"
+    ],
+    "description": "Writing as Johannes de Silentio, Kierkegaard examines Abraham's willingness to sacrifice Isaac to explore the troubling relationship between faith and universal ethics."
+  },
+  {
+    "title": "The Code of Man",
+    "author": "Waller R. Newell",
+    "genre": "Moral and political philosophy",
+    "themes": [
+      "masculinity",
+      "virtue",
+      "responsibility",
+      "character"
+    ],
+    "description": "Newell draws on Western literature and philosophy to argue for an ideal of manhood organized around love, courage, pride, family, and country."
+  },
+  {
+    "title": "Heart of Darkness",
+    "author": "Joseph Conrad",
+    "genre": "Modernist novella",
+    "themes": [
+      "imperialism",
+      "exploitation",
+      "moral ambiguity",
+      "human brutality"
+    ],
+    "description": "Marlow recounts a journey into the Congo to find the ivory trader Kurtz, exposing colonial violence and the instability of claims to civilization."
+  },
+  {
+    "title": "Meditations",
+    "author": "Marcus Aurelius",
+    "genre": "Stoic philosophy",
+    "themes": [
+      "self-discipline",
+      "mortality",
+      "duty",
+      "acceptance"
+    ],
+    "description": "Private philosophical reflections by a Roman emperor explore how to govern one's judgments, fulfill responsibilities, and respond calmly to change and death."
+  },
+  {
+    "title": "The Hobbit & The Lord of the Rings",
+    "author": "J. R. R. Tolkien",
+    "genre": "Epic fantasy",
+    "themes": [
+      "friendship",
+      "courage",
+      "corrupting power",
+      "mercy"
+    ],
+    "description": "Connected adventures in Middle-earth follow Bilbo Baggins' unexpected quest and the later struggle to destroy the One Ring and defeat Sauron."
+  },
+  {
+    "title": "With the Old Breed",
+    "author": "E. B. Sledge",
+    "genre": "War memoir",
+    "themes": [
+      "combat trauma",
+      "comradeship",
+      "survival",
+      "dehumanization"
+    ],
+    "description": "Sledge recounts his experiences as a U.S. Marine at Peleliu and Okinawa, emphasizing the physical horror and psychological strain of Pacific combat."
+  },
+  {
+    "title": "Self-Control: Its Kingship and Majesty",
+    "author": "William George Jordan",
+    "genre": "Self-help essays",
+    "themes": [
+      "self-discipline",
+      "emotional restraint",
+      "character",
+      "personal responsibility"
+    ],
+    "description": "A collection of essays presenting mastery of impulses, thoughtful conduct, and inner steadiness as foundations of a constructive life."
+  },
+  {
+    "title": "The Abventures of Tom Sawyer",
+    "author": "Mark Twain",
+    "genre": "Coming-of-age adventure fiction",
+    "themes": [
+      "childhood",
+      "friendship",
+      "freedom",
+      "moral growth"
+    ],
+    "description": "Interpreted as The Adventures of Tom Sawyer, a story of a mischievous boy whose escapades along the Mississippi lead to danger and growing responsibility."
+  },
+  {
+    "title": "The Idiot",
+    "author": "Fyodor Dostoevsky",
+    "genre": "Philosophical fiction",
+    "themes": [
+      "innocence",
+      "compassion",
+      "social corruption",
+      "destructive passion"
+    ],
+    "description": "The candid and compassionate Prince Myshkin enters Russian high society, where his goodness becomes entangled with jealousy, desire, and social calculation."
+  },
+  {
+    "title": "The Collectied Jack London",
+    "author": "Jack London",
+    "genre": "Collected fiction",
+    "themes": [
+      "survival",
+      "nature",
+      "class struggle",
+      "human endurance"
+    ],
+    "description": "Interpreted as a collected edition of Jack London's writing; the exact contents and balance of novels, stories, or other works depend on the edition."
+  }
+]
