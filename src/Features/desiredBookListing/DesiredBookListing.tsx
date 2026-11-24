@@ -1,9 +1,13 @@
 import type { BookData } from "../../types/BookIt.ts"
+import { useId, useState } from "react";
+
+
 // import { bookStore } from "#/store/savedBookList.ts"
 // import { useSelector } from '@tanstack/react-store'
 
 import { ToggleSwitch } from "#/components/lib/ToggleSwitch.tsx"
 import { Button } from "#/components/lib/Button"
+import {StarRating} from '#/components/lib/StarRating'
 
 
 interface BookListingProps {
@@ -19,18 +23,23 @@ function BookListing({ bookItem }: BookListingProps) {
   const isItem = bookItem !== undefined
   const headingStyle = isItem ? "none" : "border-b"
 
+
+  const [rating, setRating] = useState( Number(bookItem?.desireRating));
+
+
   return (
     <li
-      className={`grid grid-cols-[150px_1fr_1fr_150px_50px]  text-left ${headingStyle} items-center`}
+      className={`grid grid-cols-[150px_1fr_1fr_1fr_50px]  text-left ${headingStyle} items-center`}
     >
       {isItem ? <BookObtained obtained={bookItem.hasObtain} /> : <BookHeading>Obtained</BookHeading>}
       {isItem ? <BookTitle bookTitle={bookItem?.title} /> : <BookHeading> Title</BookHeading>}
       {isItem ? <BookItem bookDetails={bookItem?.author} /> : <BookHeading>Author</BookHeading>}
-      {isItem ? <BookItem bookDetails={String(bookItem?.desireRating)} /> : <BookHeading>Desired Rating</BookHeading>}
+      {isItem ? <StarRating value={rating} onChange={setRating} /> : <BookHeading>Desired Rating</BookHeading>}
       {isItem ? <Button buttonType="fill" >X</Button> : <BookHeading >Remove</BookHeading >}
     </li>
   )
 }
+
 
 
 
@@ -48,7 +57,7 @@ export function DesiredBookListing({ desiredBooks }: DesiredBookListingProps) {
 
   return (
     <ul>
-      <BookListing />
+      <BookListing key={0} />
       {
         desiredBooks.map((x: BookData) => <BookListing key={x.id} bookItem={x} />)
       }

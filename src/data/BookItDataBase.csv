@@ -1,16 +1,16 @@
 id,title,author,desireRating,hasObtain
 be9cac8d-c280-420e-9145-31d21f9b051a,The Great Gatsby,F. Scott Fitzgerald,0,true
 e75e0ab2-baeb-4801-91e6-f0e75c17c3ef,The Prince,Niccolo Machiavelli,0,true
-91bd24ab-2895-4a83-8ef6-8ebc6af9fb29,Band of Brothers,Stephen Ambrose,0,false
+91bd24ab-2895-4a83-8ef6-8ebc6af9fb29,Band of Brothers,Stephen Ambrose,2,false
 88b0edea-43b7-4e6e-95eb-b4904c5c2413,The Republic,Plato,0,true
 95cd32f2-3db7-4848-ab19-94c4a8ad0e28,The Wealth of Nations,Adam Smith,0,true
-9c867c72-ccc3-4426-9dd1-3bf4b49d9781,The Call of the Wild,Jack London,0,true
+9c867c72-ccc3-4426-9dd1-3bf4b49d9781,The Call of the Wild,Jack London,5,true
 3cf8e959-d19c-4bb1-af26-6b686cf9b40e,Theodore Roosevelt Trilogy,Edmund Morris,0,true
-a1071277-01d1-4cf3-83a0-6e90763fe4d1,1984,George Orwell,0,true
+a1071277-01d1-4cf3-83a0-6e90763fe4d1,1984,George Orwell,5,true
 b5ae38d1-4405-4b60-85ce-824e79da0644,Brave New World,Aldous Huxley,0,true
 6d3d6fdf-b6f3-410b-8f76-975ebc366367,How to Win Friends and Influence People,Dale Carnegie,0,false
 33131878-b930-4338-ae97-162b4a507c6c,Roman Honor,Carlin Barton,0,true
-4c8fb4c7-f358-4e77-a0fe-e2e2e918d5c6,Catch-22,Joseph Heller,0,true
+4c8fb4c7-f358-4e77-a0fe-e2e2e918d5c6,Catch-22,Joseph Heller,2,true
 74bc8427-7e0f-4fb9-80be-07452c7a7a93,Slaughterhouse-Five,Kurt Vonnegut,0,true
 fcce5eed-9132-4970-8f14-c9c6e85d75d9,The Brothers Karamazov,Fyodor Dostoevsky,0,true
 b3df7230-9304-47e6-b56a-95be4f6c0bb4,The Sun Also Rises,Ernest Hemingway,0,true
