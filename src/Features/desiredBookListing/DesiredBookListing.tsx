@@ -7,7 +7,7 @@ import { useId, useState } from "react";
 
 import { ToggleSwitch } from "#/components/lib/ToggleSwitch.tsx"
 import { Button } from "#/components/lib/Button"
-import {StarRating} from '#/components/lib/StarRating'
+import { StarRating } from '#/components/lib/StarRating'
 
 
 interface BookListingProps {
@@ -15,7 +15,6 @@ interface BookListingProps {
 }
 
 function BookListing({ bookItem }: BookListingProps) {
-  const BookObtained = ({ obtained }: { obtained: boolean }) => (<ToggleSwitch obtained={obtained}></ToggleSwitch  >)
   const BookHeading = ({ children }: { children: React.ReactNode }) => <p className="font-bold">{children}</p>
   const BookItem = ({ bookDetails }: { bookDetails: string }) => <p>{bookDetails}</p>
   const BookTitle = ({ bookTitle }: { bookTitle: string }) => <a href={`book/${bookTitle}`}>{bookTitle}</a>
@@ -24,17 +23,30 @@ function BookListing({ bookItem }: BookListingProps) {
   const headingStyle = isItem ? "none" : "border-b"
 
 
-  const [rating, setRating] = useState( Number(bookItem?.desireRating));
+  const [rating, setRating] = useState<number>(Number(bookItem?.desireRating ?? 0));
+  const [obtained, setObtain] = useState<boolean>(bookItem?.hasObtain ?? false)
 
+
+  function handleRatingChange(nextRating: string) {
+    const value = Number(nextRating);
+
+    setRating(value);
+    // updateBook(bookItem.id, { desireRating: value });
+  }
+
+  function handleObtainedChange(nextObtained: boolean) {
+    setObtain(nextObtained);
+    // updateBook(bookItem.id, { hasObtain: nextObtained });
+  }
 
   return (
     <li
       className={`grid grid-cols-[150px_1fr_1fr_1fr_50px]  text-left ${headingStyle} items-center`}
     >
-      {isItem ? <BookObtained obtained={bookItem.hasObtain} /> : <BookHeading>Obtained</BookHeading>}
+      {isItem ? <ToggleSwitch obtained={obtained} onChange={handleObtainedChange} ></ToggleSwitch> : <BookHeading>Obtained</BookHeading>}
       {isItem ? <BookTitle bookTitle={bookItem?.title} /> : <BookHeading> Title</BookHeading>}
       {isItem ? <BookItem bookDetails={bookItem?.author} /> : <BookHeading>Author</BookHeading>}
-      {isItem ? <StarRating value={rating} onChange={setRating} /> : <BookHeading>Desired Rating</BookHeading>}
+      {isItem ? <StarRating value={rating} onChange={handleRatingChange} /> : <BookHeading>Desired Rating</BookHeading>}
       {isItem ? <Button buttonType="fill" >X</Button> : <BookHeading >Remove</BookHeading >}
     </li>
   )
